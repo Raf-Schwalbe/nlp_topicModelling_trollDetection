@@ -26,12 +26,12 @@
     1. Prepare a workbench
     2. Datasets preparation
     3. FiveThirtyEight's troll tweets dataset
-    4. Language detector
+    4. **Language detector**
     5. Annotated dataset
     6. Model fine-tuning
     7. Model evaluation
     8. Model saving
-    9. Predictions with trained model
+    9. **Predictions with trained model**
     10. Find users with higher than average number of troll-like tweets
 
 ## Interesting features
