@@ -38,15 +38,15 @@
 
 1. language - the language of the analyzed tweets was Polish. It differentiated the project from english oriented ones and requires use of relevant tools
 2. in topic modelling two approaches were compared - 
-    1. Gibbs Sampling Dirichlet Mixture Model (GSDMM) which is a modified LDA algorithm that uses the simple assumption of one topic assigned to one text. 
+    1. **Gibbs Sampling Dirichlet Mixture Model (GSDMM)** which is a modified LDA algorithm that uses the simple assumption of one topic assigned to one text. 
     This assumption turned out to be relevant for tweets
     2. LDA
-3. In topic modelling hyperparameter - number of topics was tuned with coherence measure
+3. In topic modelling hyperparameter - number of topics was tuned with **coherence measure**
 4. Approach to the troll account hunt - the problem was translated to the supervised one and then transition from tweets to accounts tweets was made:
     1. find labelled (troll-like, not-troll-like) datasets and filter polish language text with language detector 
-    2. fine-tune a Transformer model on labelled dataset - transfer learning was used
+    2. fine-tune a **Transformer model** on labelled dataset - **transfer** learning was used
     3. Use model to predict whether tweets are troll-like
-    4. If the account has share of troll-like tweets sinificantly higher than tweets' authors population point the account as a troll one 
+    4. If the account has share of troll-like tweets sinificantly higher than population it points the account maybe troll one 
 
 ## Next steps
 1. build application where user can use built models to:
